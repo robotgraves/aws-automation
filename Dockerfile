@@ -19,6 +19,3 @@ RUN cp jq /usr/bin
 RUN curl --output /tmp/vault.zip https://releases.hashicorp.com/vault/"$VAULT_VERSION"/vault_"$VAULT_VERSION"_linux_amd64.zip
 RUN unzip /tmp/vault.zip -d /usr/local/bin
 RUN vault --version
-
-RUN /usr/bin/easy_install virtualenv
-RUN virtualenv /opt/v
